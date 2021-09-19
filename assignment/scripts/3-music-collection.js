@@ -1,17 +1,13 @@
 console.log('***** Music Collection *****')
 let collection = []
   function addToCollection (title, artist, yearPublished) {
-    let record = {
-      title:title,
-      artist:artist,
-      yearPublished:yearPublished
-    }
+    let record= {title:title, artist:artist, yearPublished:yearPublished};
     collection.push(record)
-    return record;
+   return record;
   }
-//addToCollection('Blonde', 'Frank Ocean', 2016);
-  console.log(addToCollection('Blonde', 'Frank Ocean', 2016));
-//  addToCollection('Nothing Was the Same', 'Drake', 2013);
+//  addToCollection('Blonde', 'Frank Ocean', 2016);
+ console.log(addToCollection('Blonde', 'Frank Ocean', 2016));
+  //addToCollection('Nothing Was the Same', 'Drake', 2013);
   console.log(  addToCollection('Nothing Was the Same', 'Drake', 2013));
   //addToCollection('Victory Lap', 'Nipsey Hussle', 2018);
     console.log(addToCollection('Victory Lap', 'Nipsey Hussle', 2018));
@@ -34,9 +30,10 @@ showCollection();
 function findByArtist(artist){
   let results = []
   for (album of collection){
-  if (album === record){
+  if (album === addToCollection()){
   result.push(artist)
   }
   }
     return results;
   }
+findByArtist('Frank Ocean');
