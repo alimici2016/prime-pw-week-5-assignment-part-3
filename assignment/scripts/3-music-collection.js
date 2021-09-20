@@ -25,16 +25,15 @@ function showCollection(array){
       console.log(album);
   }
 }
-showCollection();
 
+showCollection();
 function findByArtist(artist){
   let results = []
-    for (album of collection){
-      if (album === collection.artist){
+    for (artist of collection){
+      if (artist === collection.artist){
         result.push(artist)
       }
   }
       return results;
   }
 findByArtist();
-
