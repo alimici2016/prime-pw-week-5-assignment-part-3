@@ -2,8 +2,8 @@ console.log('***** Music Collection *****')
 let collection = []
   function addToCollection (title, artist, yearPublished) {
     let record= {title:title, artist:artist, yearPublished:yearPublished};
-    collection.push(record)
-   return record;
+      collection.push(record)
+      return record;
   }
 //  addToCollection('Blonde', 'Frank Ocean', 2016);
  console.log(addToCollection('Blonde', 'Frank Ocean', 2016));
@@ -21,29 +21,20 @@ console.log(collection);
 
 function showCollection(array){
   console.log(collection.length);
-  for (album of collection){
-  console.log(album);
- }
+    for (album of collection){
+      console.log(album);
+  }
 }
 showCollection();
 
 function findByArtist(artist){
   let results = []
-  for (album of collection){
-  if (album === collection.artist){
-  result.push(artist)
+    for (album of collection){
+      if (album === collection.artist){
+        result.push(artist)
+      }
   }
+      return results;
   }
-    return results;
-  }
-findByArtist('Frank Ocean');
-function findByArtist(artist){
-  let results = []
-  for (album of collection){
-  if (album === collection.artist){
-  result.push(artist)
-  }
-  }
-    return results;
-  }
-findByArtist('Frank Ocean');
+findByArtist();
+
