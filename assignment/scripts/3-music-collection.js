@@ -30,7 +30,17 @@ showCollection();
 function findByArtist(artist){
   let results = []
   for (album of collection){
-  if (album === addToCollection()){
+  if (album === collection.artist){
+  result.push(artist)
+  }
+  }
+    return results;
+  }
+findByArtist('Frank Ocean');
+function findByArtist(artist){
+  let results = []
+  for (album of collection){
+  if (album === collection.artist){
   result.push(artist)
   }
   }
